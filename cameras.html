@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cámaras de Seguridad - Servicios Técnicos Pereira</title>
+    <!-- Carga de Roboto Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Carga de Tailwind CSS para el estilo de wireframe -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Carga de Lucide Icons (similar a la versión de React) -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        background-image: url(/image-tech1.jpg);
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="wireframe-box w-full max-w-4xl mx-auto bg-white shadow-xl relative overflow-hidden flex flex-col"
+    >
+      <!-- Header -->
+      <header
+        class="border-b-2 border-gray-200 p-4 flex justify-center items-center bg-white sticky top-0 z-10"
+      >
+        <nav class="hidden md:flex gap-4 text-sm">
+          <a href="index.html" class="hover:underline text-gray-800 font-bold">
+            Inicio
+          </a>
+          <a
+            href="index.html"
+            onclick="showView('services')"
+            class="hover:underline"
+          >
+            Servicios
+          </a>
+          <a
+            href="index.html"
+            onclick="showView('booking')"
+            class="hover:underline"
+          >
+            Agendar
+          </a>
+        </nav>
+        <div class="flex gap-2">
+          <div
+            class="md:hidden w-8 h-8 border border-gray-400 flex items-center justify-center"
+          >
+            <i data-lucide="menu" class="w-4 h-4"></i>
+          </div>
+        </div>
+      </header>
+
+      <!-- Content -->
+      <div
+        class="flex-1 overflow-y-auto font-sans text-gray-700 p-8 max-w-4xl mx-auto"
+      >
+        <div class="text-xs text-gray-500 mb-4 font-mono flex gap-2">
+          <a href="index.html" class="cursor-pointer hover:underline">Inicio</a>
+          /
+          <span>Servicios</span>
+          /
+          <span>Cámaras de Seguridad</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <!-- Image -->
+            <div
+              class="w-full h-64 bg-gray-100 border-2 border-gray-300 flex items-center justify-center relative overflow-hidden"
+            >
+              <img
+                src="/camara-seguridad.png"
+                class="object-cover w-full h-full"
+                alt="Cámaras de Seguridad"
+              />
+            </div>
+          </div>
+
+          <div class="space-y-6">
+            <div>
+              <h1 class="text-3xl font-bold text-gray-800">
+                Cámaras de Seguridad
+              </h1>
+              <div class="flex items-center gap-2 mt-2">
+                <div class="flex text-gray-400">
+                  <i
+                    data-lucide="star"
+                    fill="currentColor"
+                    class="w-3.5 h-3.5"
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    fill="currentColor"
+                    class="w-3.5 h-3.5"
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    fill="currentColor"
+                    class="w-3.5 h-3.5"
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    fill="currentColor"
+                    class="w-3.5 h-3.5"
+                  ></i>
+                  <i data-lucide="star" class="w-3.5 h-3.5"></i>
+                </div>
+                <span class="text-xs text-gray-500"
+                  >(25 Servicios realizados)</span
+                >
+              </div>
+            </div>
+
+            <div class="p-4 bg-gray-50 border border-gray-200">
+              <p class="font-mono text-sm text-gray-500">Precio estimado</p>
+              <p class="text-2xl font-bold text-gray-800">
+                $150.000
+                <span class="text-sm font-normal text-gray-500"
+                  >/ por 4 cámaras</span
+                >
+              </p>
+            </div>
+
+            <div class="space-y-4 text-sm text-gray-600">
+              <h3 class="font-bold text-gray-800">Descripción del servicio</h3>
+              <p>
+                Servicio profesional de instalación de sistemas de vigilancia.
+                Incluye cableado estructurado, configuración de DVR y
+                configuración para visualización remota en celular.
+              </p>
+
+              <h3 class="font-bold text-gray-800">Incluye:</h3>
+              <ul class="list-disc pl-5 space-y-1">
+                <li>Montaje de cámaras (Interior/Exterior).</li>
+                <li>Configuración de red.</li>
+                <li>Capacitación de uso de la App.</li>
+                <li>15 metros de cableado por cámara.</li>
+              </ul>
+            </div>
+
+            <button
+              onclick="window.open('index.html', '_self'); showView('booking')"
+              class="w-full bg-blue-800 rounded-2xl text-white py-4 font-bold uppercase tracking-wide hover:bg-blue-600 transition duration-300"
+            >
+              Agendar Cita de Revisión
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="bg-gray-100 border-t-2 border-gray-200 p-8 mt-auto">
+        <div
+          class="grid grid-cols-3 gap-4 text-xs text-gray-500 max-w-4xl mx-auto"
+        >
+          <div class="space-y-2">
+            <div class="font-bold text-gray-700">RedeTech</div>
+            <p>Servicios a domicilio en toda el área de Pereira.</p>
+          </div>
+          <div class="space-y-1">
+            <p>Inicio</p>
+            <p>Servicios</p>
+            <p>Términos</p>
+          </div>
+          <div class="space-y-1">
+            <p>Contacto</p>
+            <p>WhatsApp</p>
+            <p>Email</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      // Initialize Lucide icons
+      window.onload = function () {
+        lucide.createIcons();
+      };
+    </script>
+  </body>
+</html>
